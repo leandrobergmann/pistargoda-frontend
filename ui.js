@@ -379,7 +379,7 @@ $('#runPRISMButton').click(function() {
     var model = saveModel();
     $.ajax({
         type: "POST",
-        url: '/prism-dtmc',
+        url: 'https://pistargoda.herokuapp.com/prism-dtmc',
         data: {
             "content": model
         }
@@ -390,7 +390,7 @@ $('#runPARAMButton').click(function() {
     var model = saveModel();
     $.ajax({
         type: "POST",
-        url: '/param-dtmc',
+        url: 'https://pistargoda.herokuapp.com/param-dtmc',
         data: {
             "content": model
         }
